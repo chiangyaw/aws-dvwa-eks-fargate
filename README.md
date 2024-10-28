@@ -84,3 +84,12 @@ kubectl get ingress -n dvwa
 ```
 Note: You will need to wait for a couple of minutes till you see the FQDN showed under ```ADDRESS```. Also, it will also take a couple more minutes till you will be able to access DVWA web application, as it takes time for ALB to be provisioned.
 
+## Outputs
+- **docker_host_public_ip**: Public IP of the EC2 instance running Docker.
+- **docker-host-key.pem**: Path to the PEM file used for SSH access to the Docker host.
+
+## Cleanup
+To delete the resources created by this project, run:
+```
+terraform destroy
+```
